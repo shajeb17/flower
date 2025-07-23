@@ -2,7 +2,6 @@
 
 body {
     text-decoration: none;
-    list-style: none;
     font-family: "Inter", sans-serif;
 }
 
@@ -173,14 +172,73 @@ section#planet-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .top-planet p{
+
+    .top-planet p {
         padding: initial;
         width: 100%;
     }
-    .top-planet{
-      width: 100%;
+
+    .top-planet {
+        width: 100%;
     }
 }
-@media (max-width:550px) {
 
+/* =============================================================================== */
+/* planet info */
+.all-slide {
+    display: flex;
+    gap: 64px;
+    padding: 20px 0px;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.slide-right {
+    width: 100%;
+}
+.slide-left img {
+    width: 87%;
+}
+
+.slide-right h1 {
+    font-size: 31px;
+    margin-right: 175px;
+}
+
+.slide-right ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #00000091;
+    margin-top: 34px;
+}
+.trasted-img img {
+    position: absolute;
+    width: 153px;
+    top: -54px;
+    left: 352px;
+}
+@media (max-width:1120px) {
+    .trasted-img img{
+        display: none;
+    }
+}
+@media (max-width:1020px) {
+    .all-slide{
+        flex-direction: column;
+    }
+     .slide-left{
+        width: 100%;
+    }
+    .slide-left img{
+        width: 100%;
+    }
+    .slide-right ul{
+        margin-left: 20px;
+    }
+    .slide-right h1 {
+        margin-right: auto;
+    }
 }
